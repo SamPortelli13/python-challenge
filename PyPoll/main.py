@@ -1,7 +1,7 @@
 import sys, os
 import csv
 
-election_data_csv = os.path.join(os.path.realpath('..'),"Pypoll\Resources", "election_data.csv")
+election_data_csv = os.path.join("Resources", "election_data.csv")
 
 # Lists & variables to store data
 candidatelist = []
@@ -52,7 +52,7 @@ print(f"Winner: {winningcandidate}")
 print(f"----------------------------")
 
 # Write the Summary to a text file
-analysis_data_csv = os.path.join(os.path.realpath('..'),"PyPoll\Analysis", "analysis_data.csv")
+analysis_data_csv = os.path.join("Analysis", "analysis_data.csv")
 
 with open(analysis_data_csv,'w', newline='') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=',')

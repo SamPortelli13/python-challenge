@@ -1,7 +1,7 @@
 import sys, os
 import csv
 
-budget_data_csv = os.path.join(os.path.realpath('..'),"PyBank\Resources", "budget_data.csv")
+budget_data_csv = os.path.join("Resources", "budget_data.csv")
 
 # Lists & variables to store data
 monthslist = []
@@ -61,7 +61,7 @@ print(f"Greatest Increase in Profits: {greatestincrmonth} (${greatestincr})")
 print(f"Greatest Decrease in Profits: {greatestdecrmonth} (${greatestdecr})")
 
 # Write the Summary to a text file
-analysis_data_csv = os.path.join(os.path.realpath('..'),"PyBank\Analysis", "analysis_data.csv")
+analysis_data_csv = os.path.join("Analysis", "analysis_data.csv")
 
 with open(analysis_data_csv,'w', newline='') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=',')
